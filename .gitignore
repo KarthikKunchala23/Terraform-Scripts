@@ -19,6 +19,8 @@ override.tf.json
 *_override.tf
 *_override.tf.json
 *.terraform.lock.hcl
+*.pub
+*.log
 
 # Include tfplan files (optional)
 # To ignore the plan output of the command: terraform plan -out=tfplan
