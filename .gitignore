@@ -24,6 +24,7 @@ override.tf.json
 *.dot
 *.svg
 planfile
+*.pem
 # Include tfplan files (optional)
 # To ignore the plan output of the command: terraform plan -out=tfplan
 # Example: *tfplan*
