@@ -2,7 +2,7 @@ resource "aws_instance" "remotexec" {
   ami = "ami-07caf09b362be10b8"
   instance_type = "t2.micro"
   key_name = "Terraform"
-  vpc_security_group_ids = ["sg-06b7e91846d6c2f13"]
+  vpc_security_group_ids = ["sg-id"]
 
   connection {
     type = "ssh"
