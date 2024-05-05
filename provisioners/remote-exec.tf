@@ -13,6 +13,7 @@ resource "aws_instance" "remotexec" {
 
   provisioner "remote-exec" {
     when = create
+    on_failure = continue #if provisioner fails reource creation will not in taint state terraform will ignore provisioner error and creates resource on_failure = continue/fail
     inline = [ 
         "sudo yum -y install nginx",
         "sudo systemctl start nginx",
