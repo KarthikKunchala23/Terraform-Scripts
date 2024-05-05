@@ -11,7 +11,7 @@ locals {
   tags = {
     Name       = local.name
     Example    = "complete"
-    Repository = "github.com/terraform-aws-modules/terraform-aws-sqs"
+    Repository = "https://github.com/KarthikKunchala23/Terraform-Scripts.git"
   }
 }
 
