@@ -1,5 +1,6 @@
 module "ec2module" {
   source = "../../modules/ec2"
+  # source = "git::https://git repo?ref=development"
   instance_type = "t2.small"
 }
 
