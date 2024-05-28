@@ -12,7 +12,7 @@ provider "github" {
   token = ""
 }
 
-resource "github_repository" "example" {
+resource "github_repository" "example1" {
   name        = "terraform-cloud"
   description = "Created by Terraform cloud"
 
