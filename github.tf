@@ -13,8 +13,8 @@ provider "github" {
 }
 
 resource "github_repository" "example" {
-  name        = "example"
-  description = "Created by Terraform"
+  name        = "terraform-cloud"
+  description = "Created by Terraform cloud"
 
   visibility = "public"
 
