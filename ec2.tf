@@ -7,6 +7,7 @@ locals {   #A local value assigns a name to an expression, so you can use the na
     Service = "AppServer"
     Owner = "DevOpsTeam"
     Name = "Dev"
+    project = "App"
   }
 } 
 
