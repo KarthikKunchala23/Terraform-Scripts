@@ -15,10 +15,11 @@ resource "aws_instance" "app-dev" {
   ami = lookup(var.ami,var.region)
   instance_type = "t2.micro"
   key_name = aws_key_pair.loginkey.key_name
-  count = 2
+  count = terraform.workspace == "default" ? 2 : 1 #workspace terraform.workspace
 
   tags = {
-    Name = element(var.tags,count.index)
+    # Name = element(var.tags,count.index)
+    Name = "vm-${terraform.workspace}-${count.index}"
   }
 }
 
